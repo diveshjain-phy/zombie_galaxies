@@ -1,7 +1,7 @@
 
-\documentclass[12pt]{article}
-
+\documentclass[10pt]{article}
 \usepackage[utf8]{inputenc}
+\usepackage{multirow}
 \usepackage{amsmath,mathtools}
 \usepackage{tcolorbox}
 \newcommand{\mbf}[1]{\mathbf{#1}}
@@ -32,27 +32,96 @@ $
 \begin{itemize}
 \item The list is organized in ascending order of Redshift .\\
 \item First column indicates designation of source.Second column represents Redshift as provided in DB1  and Third column represents Redshift from DB2.
+\item The Sources with star marked designation are listed as candidates in DB1
 \end{itemize}
 
 \begin{center}
-\begin{tabular}{|p{4cm}|p{4cm}|p{4cm}|}
+\begin{tabular}{|c|c|c|c|c|}
 \hline 
-\tbf{Designation} & Redshift1(z) & Redshift2\\
+\tbf{Designation} & Redshift1(z) & Redshift2 & Frequency(MHz) & Surface Brightness(mJy)\\
 \hline
-ACO S 753 & 0.0130 & \tbf{0.014}\\
-A4038 & 0.0303 & \tbf{0.02819}\\
+\multirow{4}{*}{AS753*} & 0.0130 & \tbf{0.014} & 2378 & 100\\
+&&&330&8500\\
+&&&1398&460\\
+&&&843&1300\\
+\hline
+\multirow{7}{*}{A4038} & 0.0303 & \tbf{0.02819}&843&170$\pm$30\\
+&&&80&19000$\pm$2700\\
+&&&160&4300$\pm$500\\
+&&&327&1440$\pm$150\\
+&&&1400&61$\pm$3\\
+&&&408&910$\pm$110\\
+&&&30&32000$\pm$7000\\
+\hline
 \tbf{A2063}&&\tbf{0.0349}\\
+\hline
 \tbf{A548b-NW} &&\tbf{0.0424}\\
+\hline
 \tbf{A548b-N} &&\tbf{0.0424}\\
-A85& 0.0557 & \tbf{0.0551}\\
-A133 & 0.0603\\
-A725 & 0.0900\\
-A13 & 0.0943 & \tbf{0.0943}\\
-A2048 &0.0980& \tbf{0.0972}\\
-A2443 & 0.1080 & \tbf{0.1080}\\
-A1033 & 0.1220\\
+\hline
+\multirow{11}{*}{A85}& 0.0557 & \tbf{0.0551}&843&200$\pm$30\\
+&&&16&93000$\pm$24000\\
+&&&80&34000$\pm$3700\\
+&&&2700&10\\
+&&&300&2739\\
+&&&1400&43$\pm$3\\
+&&&30&93000$\pm$13000\\
+&&&408&1540$\pm$250\\
+&&&1425&40.9$\pm$2.3\\
+&&&160&8330$\pm$700\\
+&&&327&3200$\pm$320\\
+\hline
+\multirow{11}{*}{A133*} & 0.0603&&4900&4$\pm$0.3\\
+&&&2700&29$\pm$16\\
+&&&1400&168$\pm$6\\
+&&&843&530$\pm$60\\
+&&&408&2620$\pm$250\\
+&&&160&10900$\pm$1200\\
+&&&80&35500$\pm$4300\\
+&&&30&46000$\pm$13000\\
+&&&330&3267.2$\pm$7.7\\
+&&&1400&136.8$\pm$0.2\\
+&&&327&2820$\pm$280\\
+\hline
+\multirow{2}{*}{A725*}& & 0.0900&1400&6$\pm$1\\
+&&&327&76$\pm$9\\
+\hline
+\end{tabular}
+\end{center}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+\tbf{Designation} & Redshift1(z) & Redshift2 & Frequency(MHz) & Surface Brightness(mJy)\\
+\hline
+\multirow{10}{*}{A13*} & 0.0943 & \tbf{0.0943}&160&2800$\pm$600\\
+&&&1425&35.5$\pm$1.7\\
+&&&80&6000$\pm$1200\\
+&&&843&90$\pm$10\\
+&&&160&2800$\pm$600\\
+&&&1400&34$\pm$0\\
+&&&408&490$\pm$80\\
+&&&1400&31$\pm$0\\
+&&&1400&30$\pm$3\\
+&&&327&630$\pm$60\\
+\hline
+\multirow{2}{*}{A2048} &0.0980& \tbf{0.0972}&325&559$\pm$61\\
+&&&1425&18.9$\pm$4.3\\
+\hline
+\multirow{3}{*}{A2443} & 0.1080 & \tbf{0.1080}&1425&6.5$\pm$0.5\\
+&&&74&5310$\pm$175\\
+&&&325&406$\pm$69\\
+\hline
+\multirow{6}{*}{A1033*} & 0.1220&&1341&53.9$\pm$7.3\\
+&&&1465&45.8$\pm$1.3\\
+&&&365&380$\pm$0\\
+&&&1422&46.9$\pm$7.6\\
+&&&1385&51.2$\pm$1.5\\
+&&&608&220$\pm$0\\
+\hline
 \tbf{A1664} & &\tbf{0.1283}\\
-24P73 & 0.1500\\
+\hline
+\multirow{2}{*}{24P73} & 0.1500 & &1400&12$\pm$3\\
+&&&325 &307$\pm$33\\
 \hline
 \end{tabular}
 \end{center}
